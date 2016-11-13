@@ -18,8 +18,8 @@
 
 		<link rel="stylesheet" type="text/css" href="css/theme.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
-		<script src="js/gezer.js"></script>
 
+		<script src="js/yaelshelli.js"></script>
 		<!-- 1. Link to jQuery (1.8 or later), -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<!-- 33 KB -->
@@ -29,6 +29,10 @@
 		<!-- 3 KB -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 		<!-- 16 KB -->
+
+		<style>
+			@import 'https://fonts.googleapis.com/css?family=Amatica+SC&subset=hebrew,latin-ext';
+		</style>
 
 		<style>
 			.fotorama__caption {
@@ -47,8 +51,107 @@
 
 	<body>
 		<div class="container">
-			<header>
-				<h1>האתר בבניה</h1>
-			</header>
+			<nav>
+				<img onclick="smalMenu()" src="image/menu-icon.png" width="10%"/>
+				<ul class="mnu1" id="mnu">
+					<li>
+						<a class="mainNavSelected" href="index.html" target="_top">דף הבית</a>
+					</li>
+					<li>
+						<a href="yael.html" target="_top">קצת עלי</a>
+					</li>
+					<li>
+						<a>פיזיותרפיה התפתחותית</a>
+						<ul class="mnu2">
+							<li>
+								<a href="WhatIsPhysiotherapy.html" target="_top">מה זה</a>
+							</li>
+							<li>
+								<a href="WhoNeedPhysiotherapy.html" target="_top">למי זה</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" target="_top">בלוג F</a>
+					</li>
+					<li>
+						<a href="PhysiotherapyTreatment.html" target="_top">הזמנת טיפולים</a>
+					</li>
+					<li>
+						<a href="ContactYael.html" target="_top">צור קשר</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="logo">
+				<a href="ContactYael.html"> <img src="image\yael_logo.jpg" /> </a>
+			</div>
+			<div id="topPic">
+				<div class="pic">
+					<div class="fotorama"
+					data-nav="thumbs"
+					data-fit="cover"
+					data-nav="false"
+					data-width="100%"
+					data-ratio="800/600"
+					data-loop="true"
+					arrows="false"
+					data-transition="crossfade"
+					data-autoplay="true"
+					data-direction="rtl">
+						<img src="image/yael1.jpg">
+						<img src="image/yael2.jpg">
+						<img src="image/yael3.jpg">
+						<img src="image/yael4.jpg">
+						<img src="image/yael5.jpg">
+						<img src="image/yael6.jpg">
+					</div>
+				</div>
+			</div>
+			<article>
+					<h2> סוגי הטיפול המוצעים: </h2>
+				<div class="bodyText1">
+					<p>
+						<strong>טורטוקוליס </strong>
+						- טיפול מיוחד לחוסר איזון בשרירי הצוואר ...
+						<br>
+					</p>
+				</div>
+				<div class="bodyText1">
+					<p>
+						<strong>איחור התפתחותי </strong>
+						- מדידת איכות ומגוון תנועתי הכולל בדיקת הסביבה הביתית והתייחסות ההורים ...
+						<br>
+					</p>
+				</div>
+				<div class="bodyText1">
+					<p>
+						<strong>טיפול שיקומי </strong>
+						- מיועד לתינוקות לאחר ניתוחים או עם מגבלה תפקודית, במטרה לשפר תפקוד מוטורי ונשימתי, ניידות, יציבה וסבולת ...
+						<br>
+					</p>
+				</div>
+				<div class="bodyText1">
+					<p>
+						<strong>מעגל אימהות </strong>
+						- זה המקום להכיר אימהות כמוך ולדבר ...
+						<br>
+					</p>
+				</div>
+				<div class="bodyText1">
+					<p>
+						<strong>ליווי התפתחותי- סדנה לאם ולתינוק </strong>
+						- חוויה מרגיעה ומיוחדת ליולדת הטרייה במטרה להפוך את הבית לסביבה התפתחותית, תומכת ומתאימה עבור הרך הנולד ...
+						<br>
+					</p>
+				
+<!--					<a href="#" class="goToPage">להמשך קריאה ...</a>
+-->
+				</div>
+				<footer>
+					<p>
+						ניתן ליצור קשר במייל <a href="mailto:yael.shelli@yahoo.com?subject=פניה מהאתר">yael.shelli@yahoo.com</a>
+					</p>
+				</footer>
+			</article>
 		</div>
 	</body>

@@ -1,0 +1,179 @@
+@media screen and (max-width: 850px) {
+	nav img {
+		display: block;
+	}
+	
+	.mnu1 {
+		display: none;
+		z-index: 1;
+		position: absolute;
+		background-color: white;
+	}
+
+	.mnu1 li {
+		display: block;
+		clear: both;
+		z-index: 1;
+		margin: 0;
+	}
+
+	.mnu1 li:hover {
+		font-weight: bold;
+	}
+
+	#topPic {
+		top: 10em;
+	}
+
+}
+
+@media screen and (max-width: 635px) {
+	nav img {
+		display: block;
+	}
+
+	.mnu1 {
+		display: none;
+		z-index: 1;
+		position: absolute;
+	}
+
+	.mnu1 li {
+		display: block;
+		clear: both;
+		z-index: 1;
+		margin: 0;
+	}
+
+	.mnu1 li:hover {
+		font-weight: bold;
+	}
+
+	.tab-logo {
+		width: 50%;
+	}
+
+	.tab-logo img {
+		width: 70%;
+	}
+
+	.tab-logo p {
+		color: yellow;
+	}
+
+	.tab-logo #logo-text {
+		font-size: 0.8em;
+	}
+
+	article {
+		top: 2em;
+	}
+
+	#about-content, .pic, .tab-art, #mail-contact {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#about-content h1 {
+		margin-bottom: 2em;
+	}
+
+	.logo-contact {
+		display: none;
+	}
+
+	#contact {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+	#logo {
+		width: 37%;
+	}
+	
+	nav {
+		width: 100%;
+	}
+
+	nav img {
+		display: block;
+		z-index: 1;
+	}
+
+	.logo-contact { 
+		display: none;
+	}
+
+	.tab-vision {
+		width: 100%;
+	}
+	.tab-vision h3 {
+		width: 100%;
+		font-size: 1.5em;
+	}
+
+	.tab-vision p {
+		font-size: 0.9em;
+	}
+
+	.mnu1 {
+		display: none;
+		z-index: 1;
+		position: absolute;
+	}
+
+	.mnu li {
+		display: block;
+		clear: both;
+		z-index: 1;
+		margin: 0;
+	}
+
+	.mnu1 li:hover {
+		font-weight: bold;
+	}
+
+
+	article, .picMe, .pic {
+		width: 100%;
+	}
+
+	article{
+		top: 7.5em;
+	}
+	
+	article > h2 {
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+		
+	.bodyText1:nth-child(n) {
+	top: auto;
+	right: 0;
+	}
+	
+}
+
+@media print {
+	body {
+		background: white;
+	}
+
+	body, p, a, h3, ul, li {
+		color: black;
+	}
+
+	nav, .pic, .picMe {
+		display: none;
+	}
+
+	article {
+		top: 0.5em;
+	}
+	
+	.bodyText2 {
+		background-color: white;
+	}
+
+}

@@ -1,3 +1,280 @@
-body {
+@keyframes txtBox {
+from {
+}
+to {
+	box-shadow: 0px 0px 15px 3px blue;
+}
+}
 
+body {
+	margin: 0px;
+	padding: 0px;
+	direction: rtl;
+	max-width: 1080px;
+	margin: 0 auto;
+	text-align: right;
+	background: white;
+	/* url('../image/wood-bg-t2.jpg') no-repeat cover; */
+	font-family: Tahoma, 'Times New Roman', Arial, sans-serif;
+	font-size: 1em;
+}
+
+p, a, h3, ul, li, h1, h2 {
+	margin: 0;
+	padding: 0;
+	/*	color: white; */
+}
+
+.container {
+	position: relative;
+	top: 10px;
+}
+
+.bdytxt {
+	position: relative;
+	top: 3em;
+}
+
+/* Menu style */
+
+nav {
+	position: absolute;
+	top: 0em;
+	padding-top: 5em;
+	right: 0px;
+	width: 74%;
+	float: right;
+	border-bottom: 0.02em solid gray;
+	margin-bottom: 0.02em;
+	background: lightblue;
+	border-radius: 10px;
+}
+
+nav img {
+	display: none;
+}
+
+.mnu1 {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: block;
+}
+
+.mnu1 li {
+	display: inline;
+	float: right;
+	list-style: none;
+	margin: 1px;
+	padding-left: 1em;
+}
+
+.mnu1 li a {
+	text-align: center;
+	display: block;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.mnu1 li a:hover, .mainNavSelected {
+	font-weight: bold;
+	color: blue !important;
+	border-bottom: 0.2em solid blue;
+}
+
+.mnu1 li:hover .mnu2 {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.mnu2 {
+	display: none;
+}
+
+.mnu2 li {
+	clear: both;
+	width: 5em;
+	background-color: white;
+	z-index: 1;
+}
+
+.mnu2 li a {
+	text-align: center;
+	display: block;
+	padding: 0px;
+	text-decoration: none;
+	border-bottom: 0.1em solid blue;
+	/*	background: url(/Project/image/drawer-pic2.jpg) no-repeat;
+	 background-size: cover;
+	 */
+}
+
+/* End of menu style */
+
+#logo {
+	position: relative;
+	width: 25%;
+	float: left;
+	text-align: center;
+	z-index: 1;
+	font-family: 'Amatica SC', cursive, Tahoma, 'Times New Roman', Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+#logo img {
+	margin: auto;
+	width: 100%;
+}
+
+#logo p {
+	border: #0000FF solid 1px;
+}
+
+h1 {
+	position: fixed;
+	top: 0em;
+	left: 0px;
+	z-index: 2;'float: right;
+	'width: 75%
+}
+
+#topPic {
+	position: relative;
+	margin-bottom: 1em;
+	top: 8em;
+	width: 100%;
+}
+
+article {
+	position: relative;
+	top: 8em;
+}
+
+.pic {
+	width: 65%;
+	'float: right;
+	border-top: solid 2px yellow;
+}
+
+.picMe {
+	width: 65%; 
+	border-top : solid 2px yellow;
+	clear: both;
+}
+
+.fontUnderline, .treatment {
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+.LineSpace{
+	padding-top: 0.4em; 
+}
+
+.bodyText1 {
+	position: relative;
+	float: right;
+	display: inline-block;
+	height: 15em;
+	width: 15em;
+	text-align: center;
+	padding: 5em 3% 0em 3%;
+	overflow: auto;
+	font-size: 0.9em;
+	background: #33cccc;
+	margin: 0.5%;
+	border-radius: 50%;
+}
+
+.bodyText1:nth-child(2) {
+	position: relative;
+	top: 10em;
+	background-color: #ffb84d;
+}
+
+.bodyText1:nth-child(3) {
+	position: relative;
+	top: 5em;
+	background-color: #e60000;
+}
+
+.bodyText1:nth-child(5) {
+	position: relative;
+	top: 5em;
+	right: 15em;
+}
+
+.bodyText1:nth-child(6) {
+	position: relative;
+	top: 1em;
+	right: 15em;
+	background-color: green;
+}
+
+.bodyText2 {
+	position: relative;
+	padding: 1em;
+	background: lightblue;
+	margin: 0.5% 0.5% 0 0.5%;
+	border-radius: 10px;
+}
+.bodyTextPic {
+	position: relative;
+	padding: 1em;
+	'background: lightblue;
+	margin: 0.5% 0.5% 0 0.5%;
+	border-radius: 10px;
+	width: 20%;
+}
+
+
+.bodyText2 > h2 {
+	font: bold 1.2em;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+.bodyText2 > p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+article h2 {
+	font: bold 1.2em;
+	position: relative;
+	top: 1em;
+}
+
+.bodyText1 a {
+	padding-right: 1.5em;
+}
+
+.bodyText1:hover, .bodyText2:hover {
+	animation-name: txtBox;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#footerYael {
+	position: relative;
+	background: chartreuse;
+	margin: 0.5%;
+	border-radius: 0 15px 0 15px;
+	padding-right: 1em;
+}
+
+footer {
+	position: relative;
+	top: 5em;
+	clear: both;
+}
+
+footer p {
+	background: chartreuse;
+	margin: 0.5%;
+	border-radius: 0 15px 0 15px;
+	padding-right: 1em;
 }
