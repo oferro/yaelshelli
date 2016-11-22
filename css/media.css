@@ -14,7 +14,7 @@
 		display: block;
 		clear: both;
 		z-index: 1;
-		margin: 0;
+		margin: 0.2em;
 	}
 
 	.mnu1 li:hover {
@@ -42,7 +42,7 @@
 		display: block;
 		clear: both;
 		z-index: 1;
-		margin: 0;
+		margin: 0.2em;
 	}
 
 	.mnu1 li:hover {
@@ -89,8 +89,13 @@
 
 @media screen and (max-width: 800px) and (orientation: portrait) {
 	#logo {
-		width: 37%;
+		width: 25%;
 	}
+
+	#logo p { 
+	font-size: 0.7em;
+	}
+
 	
 	nav {
 		width: 100%;
@@ -99,22 +104,6 @@
 	nav img {
 		display: block;
 		z-index: 1;
-	}
-
-	.logo-contact { 
-		display: none;
-	}
-
-	.tab-vision {
-		width: 100%;
-	}
-	.tab-vision h3 {
-		width: 100%;
-		font-size: 1.5em;
-	}
-
-	.tab-vision p {
-		font-size: 0.9em;
 	}
 
 	.mnu1 {
@@ -127,7 +116,7 @@
 		display: block;
 		clear: both;
 		z-index: 1;
-		margin: 0;
+		margin: 0.2em;
 	}
 
 	.mnu1 li:hover {

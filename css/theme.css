@@ -13,8 +13,11 @@ body {
 	max-width: 1080px;
 	margin: 0 auto;
 	text-align: right;
-	background: white;
-	/* url('../image/wood-bg-t2.jpg') no-repeat cover; */
+	background-color: white;
+/*	background-image: url("../image/foot.png");
+	background-size: 12%;
+	background-attachment: fixed;
+*/
 	font-family: Tahoma, 'Times New Roman', Arial, sans-serif;
 	font-size: 1em;
 }
@@ -28,6 +31,7 @@ p, a, h3, ul, li, h1, h2 {
 .container {
 	position: relative;
 	top: 10px;
+	width: 75%;
 }
 
 .bdytxt {
@@ -42,11 +46,11 @@ nav {
 	top: 0em;
 	padding-top: 5em;
 	right: 0px;
-	width: 74%;
+	width: 100%;
 	float: right;
 	border-bottom: 0.02em solid gray;
 	margin-bottom: 0.02em;
-	background: lightblue;
+	background: white;
 	border-radius: 10px;
 }
 
@@ -79,8 +83,8 @@ nav img {
 
 .mnu1 li a:hover, .mainNavSelected {
 	font-weight: bold;
-	color: blue !important;
-	border-bottom: 0.2em solid blue;
+	color: !important;
+	border-bottom: 0.2em solid ;
 }
 
 .mnu1 li:hover .mnu2 {
@@ -114,13 +118,14 @@ nav img {
 /* End of menu style */
 
 #logo {
-	position: relative;
+	position: fixed;
+	left: 1em;
 	width: 25%;
 	float: left;
 	text-align: center;
 	z-index: 1;
-	font-family: 'Amatica SC', cursive, Tahoma, 'Times New Roman', Arial, sans-serif;
-	font-size: 1.5em;
+/*	font-family: 'Amatica SC', cursive, Tahoma, 'Times New Roman', Arial, sans-serif; */
+	font-size: 1.0em;
 }
 
 #logo img {
@@ -129,6 +134,7 @@ nav img {
 }
 
 #logo p {
+	background-color: white;
 	border: #0000FF solid 1px;
 }
 
@@ -152,6 +158,13 @@ article {
 	top: 8em;
 }
 
+article h2 {
+	font-family: 'Amatica SC', cursive, Tahoma, 'Times New Roman', Arial, sans-serif;
+	font-size: 2.5em;
+	position: relative;
+	top: 1em;
+}
+
 .pic {
 	width: 65%;
 	'float: right;
@@ -169,10 +182,6 @@ article {
 	font-weight:bold;
 }
 
-.LineSpace{
-	padding-top: 0.4em; 
-}
-
 .bodyText1 {
 	position: relative;
 	float: right;
@@ -183,52 +192,56 @@ article {
 	padding: 5em 3% 0em 3%;
 	overflow: auto;
 	font-size: 0.9em;
-	background: #33cccc;
+	background-color: #ffb84d;  
 	margin: 0.5%;
 	border-radius: 50%;
 }
 
+.bodyText1:first-child {
+	position: relative;
+	background-color: #59f751;
+}
+
+
 .bodyText1:nth-child(2) {
 	position: relative;
-	top: 10em;
-	background-color: #ffb84d;
+	top: 7em;
+	background-color: #33cccc;
 }
 
 .bodyText1:nth-child(3) {
 	position: relative;
 	top: 5em;
+	right: 2em;
 	background-color: #e60000;
 }
 
 .bodyText1:nth-child(5) {
 	position: relative;
-	top: 5em;
-	right: 15em;
+	top: 3em;
+	background-color: green;
+	right: 5em;
 }
 
 .bodyText1:nth-child(6) {
 	position: relative;
-	top: 1em;
-	right: 15em;
-	background-color: green;
+	background-color: #59f751;
+	top: -4em;
+	right: 10em;
 }
 
 .bodyText2 {
 	position: relative;
 	padding: 1em;
-	background: lightblue;
+/*	background: lightblue; */
 	margin: 0.5% 0.5% 0 0.5%;
+	border:#0000FF solid 1px;
 	border-radius: 10px;
-}
-.bodyTextPic {
-	position: relative;
-	padding: 1em;
-	'background: lightblue;
-	margin: 0.5% 0.5% 0 0.5%;
-	border-radius: 10px;
-	width: 20%;
 }
 
+.LineSpace{
+	padding-top: 0.4em; 
+}
 
 .bodyText2 > h2 {
 	font: bold 1.2em;
@@ -242,21 +255,55 @@ article {
 	text-justify: inter-word;
 }
 
-article h2 {
+.bodyText3 {
+	position: relative;
+	max-height:6.5em; 
+	padding: 1em;
+/*	background: lightblue; */
+	margin: 0.5% 0.5% 0 0.5%;
+	border:#0000FF solid 1px;
+	border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bodyText3:hover {
+	max-height: none;
+	background-color: pink;	
+}
+
+.bodyText3 > h2 {
 	font: bold 1.2em;
 	position: relative;
-	top: 1em;
+	top: 0;
+	right: 0;
 }
+
+.bodyText3 > p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 
 .bodyText1 a {
 	padding-right: 1.5em;
 }
 
-.bodyText1:hover, .bodyText2:hover {
+.bodyText1:hover {
 	animation-name: txtBox;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 }
+
+.bodyTextPic {
+	position: relative;
+	padding: 1em;
+	'background: lightblue;
+	margin: 0.5% 0.5% 0 0.5%;
+	border-radius: 10px;
+	width: 20%;
+}
+
 
 #footerYael {
 	position: relative;
