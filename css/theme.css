@@ -44,13 +44,14 @@ p, a, h3, ul, li, h1, h2 {
 nav {
 	position: absolute;
 	top: 0em;
-	padding-top: 5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	right: 0px;
 	width: 100%;
 	float: right;
 	border-bottom: 0.02em solid gray;
 	margin-bottom: 0.02em;
-	background: white;
+	background-color: #63BFBF;  /*  תכלת  */
 	border-radius: 10px;
 }
 
@@ -148,21 +149,24 @@ h1 {
 
 #topPic {
 	position: relative;
+	top: 4em; 
 	margin-bottom: 1em;
-	top: 8em;
 	width: 100%;
 }
 
-article {
-	position: relative;
-	top: 8em;
-}
-
-article h2 {
+#ttl1 {
 	font-family: 'Amatica SC', cursive, Tahoma, 'Times New Roman', Arial, sans-serif;
 	font-size: 2.5em;
 	position: relative;
 	top: 1em;
+	text-decoration: underline;
+}
+
+article {
+	position: relative;
+	top: 4em;
+	height:24em;
+	background: url(../image/bg-balls-3.jpg) repeat;	
 }
 
 .pic {
@@ -186,54 +190,56 @@ article h2 {
 	position: relative;
 	float: right;
 	display: inline-block;
-	height: 15em;
-	width: 15em;
+	height: 10em;
+	width: 10em;
 	text-align: center;
-	padding: 5em 3% 0em 3%;
+	padding: 3em 3% 0em 3%;
 	overflow: auto;
-	font-size: 0.9em;
+	font-size: 0.7em;
 	background-color: #ffb84d;  
 	margin: 0.5%;
 	border-radius: 50%;
+	color: white;
+/*
+	background-color: #FFBA0D; /*  כתום  */
+	background-color: #FF2980; /* אדום  */
+	background-color: #60087A;  /*  סגול  */
+*/
 }
 
-.bodyText1:first-child {
-	position: relative;
-	background-color: #59f751;
+#txt1 {
+	background-color: #63BFBF;  /*  תכלת  */
 }
 
 
-.bodyText1:nth-child(2) {
-	position: relative;
+#txt2 {
 	top: 7em;
-	background-color: #33cccc;
+	background-color: #FF2980; /* אדום  */
 }
 
-.bodyText1:nth-child(3) {
-	position: relative;
+#txt3 {
 	top: 5em;
 	right: 2em;
-	background-color: #e60000;
+	background-color: #60087A;  /*  סגול  */
 }
 
-.bodyText1:nth-child(5) {
-	position: relative;
+#txt4 {
+	top: 18em;
+	background-color: #63BFBF;  /*  תכלת  */
+	right: -17em;
+}
+
+#txt5 {
+	background-color: #FFBA0D; /*  כתום  */
 	top: 3em;
-	background-color: green;
-	right: 5em;
-}
-
-.bodyText1:nth-child(6) {
-	position: relative;
-	background-color: #59f751;
-	top: -4em;
-	right: 10em;
+	right: 3em;
+	overflow: hidden;
 }
 
 .bodyText2 {
 	position: relative;
 	padding: 1em;
-/*	background: lightblue; */
+	background: url(../image/bg-balls-3.jpg) repeat;	
 	margin: 0.5% 0.5% 0 0.5%;
 	border:#0000FF solid 1px;
 	border-radius: 10px;
@@ -249,27 +255,28 @@ article h2 {
 	top: 0;
 	right: 0;
 }
-
+/*
 .bodyText2 > p {
 	text-align: justify;
 	text-justify: inter-word;
 }
-
+*/
 .bodyText3 {
 	position: relative;
 	max-height:6.5em; 
 	padding: 1em;
-/*	background: lightblue; */
 	margin: 0.5% 0.5% 0 0.5%;
 	border:#0000FF solid 1px;
 	border-radius: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
+	background: url(../image/bg-balls-3.jpg) repeat;
 }
 
 .bodyText3:hover {
 	max-height: none;
-	background-color: pink;	
+	background-image: none;
+	background-color: #63BFBF;  /*  תכלת  */
 }
 
 .bodyText3 > h2 {
@@ -280,10 +287,13 @@ article h2 {
 }
 
 .bodyText3 > p {
-	text-align: justify;
 	text-justify: inter-word;
 }
 
+.con1 {
+	text-align: left;
+	
+}
 
 .bodyText1 a {
 	padding-right: 1.5em;
@@ -293,6 +303,7 @@ article h2 {
 	animation-name: txtBox;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
+	overflow: auto;
 }
 
 .bodyTextPic {
@@ -315,12 +326,12 @@ article h2 {
 
 footer {
 	position: relative;
-	top: 5em;
+	top: 4em;
 	clear: both;
 }
 
 footer p {
-	background: chartreuse;
+	background-color: #63BFBF;  /*  תכלת  */
 	margin: 0.5%;
 	border-radius: 0 15px 0 15px;
 	padding-right: 1em;
